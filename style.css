@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none; border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
+    --box-shadwo:0 .5rem 1.5rem rgba(0,0,0,.3);
+}
+
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-slider-thumb{
+    background: #1c2ed1;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg-color-2);
+}
+
+#menu-bar{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-size: 3.5rem;
+    color: #1c2ed1;
+}
+.enquiry{
+    display: none;
+    font-size: 2.3rem;
+}
+
+/* header1 starts */
+.header1 .flag{
+    display: flex;
+    align-items: center;
+    margin-left: 9rem;
+}
+
+.header1 .flag i{
+    margin-left: .5rem;
+    font-size: 1rem;
+}
+.header1 .flag img{
+    width: 5rem;
+    margin-left: 3rem;
+}
+
+.header1 .middle{
+    display: flex;
+    align-items: center;
+    margin-left: 17rem;
+    gap: 2rem;
+}
+
+.header1{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    padding: .5rem 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-color-1);
+}
+
+.header1 .middle .box{
+    font-size: 1.2rem;
+}
+
+.header1 .logo img{
+    width: 20rem;
+}
+
+.header1 .navbar1 .image img{
+    width:4.2rem;
+}
+
+.header1 .navbar1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* header1 ends */
+
+/* header starts */
+.header{
+    background: #1c2ed1;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    padding: .5rem;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10000;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    color: var(--bg-color-2);
+}
+
+.header .navbar a:hover{
+    background-color: rgb(53, 14, 180);
+}
+
+.header .search-bar-container::placeholder{
+    color: var(--bg-color-2);
+}
+
+.header .search-bar-container label{
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.header .search-bar-container{
+    background-color: #88a2f0;
+    border-radius: .4rem;
+}
+
+.header .search-bar-container #search-bar{
+    padding:.5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    color:var(--bg-color-2);
+    background-color: #88a2f0;
+    font-size: 1.5rem;
+    border-radius: .4rem;
+}
+/* header ends */
+
+/* Section first */
+.first{
+    position: relative;
+}
+
+.first .images img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.about{
+    margin-left: 21rem;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.about .navbar2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.about .kneeinfo h1{
+    font-size: 1.6rem;
+    margin-bottom: .6rem;
+}
+
+.about .kneeinfo p{
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+}
+
+.btn{
+    padding: .4rem 1rem;
+    border-radius: .2rem;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(.9);    
+}
+/* second section starts */
+
+.second .navbar3{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-size: 1.6rem;
+    gap: 1.7rem;
+    padding: .5rem;
+    background: var(--bg-color-1);    
+}
+
+.second .navbar3 li a{
+    color: #111;
+}
+
+.second .navbar3 li a:active{
+    border-bottom: 1px solid #1c2ed1;
+}
+
+/* second section ends  */
+
+/* overview section starts */
+.overview{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #1c2ed1;
+    padding: 2rem;
+    margin: 2rem 8rem;
+    text-align: center; 
+}
+
+.information{
+    flex: 1 1 30rem;
+
+}
+.information h3{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.information .short,.information .long{
+    text-align:left;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.overview .imginfo{
+    flex: 1 1 30rem;
+}
+
+.overview .imginfo img{
+    box-shadow: var(--box-shadwo);
+    width: 90%;
+    height: 23rem;
+    border-radius: .5rem;
+}
+/* overview section ends */
+
+
+/* Eligbility section starts */
+.eligbility{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #1c2ed1;
+    padding: 2rem;
+    margin: 2rem 8rem;
+    width: 50%;
+}
+
+.row{
+    position: absolute;
+    width: 27rem;
+    background: var(--bg-color-1);
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 3rem;
+    right: 30rem;
+    padding: 3.5rem 2rem;
+    box-shadow: var(--box-shadwo);
+}
+
+.row h3{
+    color: #3ac4e7;
+    font-size: 2rem;
+    margin-bottom: .6rem;
+}
+
+.row span{
+    font-size: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.row form{
+    padding: 1rem 0;
+    display: flex;
+}
+
+.row form .inputBox input{
+    padding: 0.5rem;
+    width: 100%;
+    color: #111;
+    border: 1px solid rgb(164, 150, 150);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.row form .inputBox textarea{
+    resize: none;
+    border: 1px solid rgb(164, 150,150);
+    height: 5rem;
+    width: 100%;
+    height: 12rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.row .btn{
+    font-size: 1.5rem;
+    width: 100%;
+    color: #fff;
+    padding: 1rem 5rem;
+}
+/* Eligbility section ends */
+
+/* According  */
+.according{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #1c2ed1;
+    padding: 2rem;
+    margin: 0 8rem;
+    width: 50%;
+}
+
+.faq h3{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.according .faq{
+    overflow: hidden;
+}
+
+.faq .description{
+    height: 0;
+    font-size: 1.1rem;
+    transition: all .2s linear;
+    margin-left: .6rem;
+}
+
+/* Stories */
+.stories{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    left: -15%;
+    margin: 2rem; /* optional*/
+}
+
+.stories h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.swiper-wrapper{
+    display: flex;    
+}
+
+.stories .swiper-slide{
+    border: 1px solid blue;
+    height: 30rem; 
+    border-radius: .5rem;
+    padding: 1rem;
+    background: var(--bg-color-1);
+}
+
+.stories .swiper-slide .box h3{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.stories .swiper-slide .box .profile h2{
+    font-size: 2rem;
+}
+
+.stories .swiper-slide .box .profile img{
+    width: 4rem;
+}
+
+.stories .swiper-slide .box .profile{
+    align-items: center;
+    margin: 2rem 2rem;
+    display: flex;
+    width: 30rem;
+    height: 4rem;
+}
+
+.stories .swiper-slide .box p{
+    width: 100%;
+    text-align: left;
+    /* border: 2px solid red; */
+    height: 14.5rem;
+    font-size: 1.4rem;
+}
+
+.stories .swiper-slide .box{
+    text-align: center;
+    border-radius: 10rem;
+}
+
+.stories .swiper-slide .box img{
+    width: 70%;
+}
+
+/* Footer Starts */
+.footer{
+    margin-top: 6rem;
+    position: relative;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+}
+
+.footer .box-container .box{
+    padding:2rem;
+    flex: 1 1 20rem;
+    margin-top: 3rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    padding: .7rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer .box-container .box a{
+    font-size: 1.3rem;
+    display: flex;
+    margin-bottom: 1rem;
+    color: #eee;
+    width: 17rem;
+ }
+
+ .footer .box-container .box img{
+    width: 35%;
+    height: 7rem;
+    filter: invert(80%);
+ }
+
+ .footer .box-container .follow i{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.footer .box-container .follow{
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+ .join{
+    position: absolute;
+    width: 20%;
+    padding: 0.6rem;
+    right: 18rem;
+    top: -2.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1.1rem;
+    padding:1rem ;
+}
+
+.footer .box-container .medical {
+    margin-top: 3rem;   
+}
+
+ .footer .box-container .box a:hover{
+    color: #1c2ed1;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    border-top:.1rem solid rgba(255, 255, 255, .2);
+}
+
+.footer .credit span{
+    color: var(--maincolor);
+}
+
+/* Footer Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1187px){
+    html{
+        font-size: 60%;
+    }
+    .header1 .logo img{
+        width: 15rem;
+    }
+
+    .header1{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .header1 .middle{
+        margin-left: 3rem;
+    }
+
+    .header1 .flag{
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width:953px){
+    html{
+        font-size: 55%;
+    }
+
+    .header .search-bar-container{
+        padding: .4rem 2rem;
+        border-radius: .5rem;
+    }
+    
+    .header1 .navbar1 .image img{
+        width:2rem;
+    }
+
+    .header1 .middle{
+        gap: 1rem;
+    }
+
+    .header1 .middle .box{
+        font-size: 1.1rem;
+    }
+
+    .header1 .flag{
+        margin-left: .1rem;
+    }
+
+    .header1 .flag img{
+        width: 4rem;
+    }
+
+    .header1 .navbar1 .image img{
+        width:3rem;
+    }
+}
+
+
+@media(max-width:769px){
+    #menu-bar{
+        display: block;
+    }
+    
+    .header .navbar{
+        position: absolute;
+        top: 0;
+        right: 15rem;
+        left: 15rem;
+        border-radius: .5rem;
+        background: rgb(153, 153, 232);
+        display: none;
+    }
+
+    .header .navbar.active{
+        display: block;
+    }
+
+    .header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        text-align: center;
+        height: 4rem;
+    }
+    .header .navbar a:hover{
+        background-color: #3ac4e7;
+    }
+    .row{
+        right: 0;
+    }
+
+    .join{
+        position: absolute;
+        width: 30%;
+        height: 7rem;
+        padding: 0rem;
+        right: 18rem;
+        top: -2.5rem;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 1.1rem;
+        padding:1rem ;
+    }
+
+    .stories{
+        width: 100%;
+        left: -15%;
+        margin: 2rem 1rem;
+    }
+}
+
+
+
+@media(max-width:455px){
+    html{
+        font-size: 43%;
+    }
+
+    .eligbility{
+        margin: 2rem 1rem;
+        width: 100%;
+    }
+
+    .profile span{
+        display: none;
+    }
+
+    .overview{
+        margin: 2rem 1rem;
+    }
+
+    .according{
+        margin: 0 1rem;
+        width: 100%;
+    }
+
+    .header .navbar{
+        top: 0;
+        right: 0;
+        left:0;
+    }
+
+    .footer .box-container .box{
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .box-container .box img{
+        width: 100%;
+    }
+
+    .footer .box-container .follow {
+        width: 100%;
+      }
+    .join{
+        width: 60%;
+        right: 10rem;
+    }
+
+    .footer .box-container .box a{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .row{
+        top: 30rem;
+        right: 10rem;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+
+    .row.active{
+        transform: scale(1);
+    }
+
+    .about{
+        margin-left: 10rem;
+    }
+
+    .about .navbar2{
+        font-size: 1.8rem;
+        margin-top: .5rem;
+    }
+    
+    .about .kneeinfo h1{
+        font-size: 2.2rem;
+    }
+    
+    .about .kneeinfo p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .header .navbar{
+        margin-left: .5rem;
+        font-size: 1.4rem;
+    }
+
+    .middle{
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .header1 .flag{
+        margin-top: 1rem;
+        margin-left: 9rem;
+    }
+
+    .enquiry{
+        display: block;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .header1 .logo{
+        width: 20rem;
+    }
+
+    .header1 .logo img{
+        position: relative;
+        width: 100%;
+        margin-left: 11rem;
+    }
+
+}
